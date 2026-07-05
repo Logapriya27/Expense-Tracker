@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Tracker</title>
     <link rel="stylesheet" href="design.css">
 </head>
@@ -27,13 +29,22 @@
         </div>
     </div>
 
-    <input type="text" id="name" placeholder="Description">
-    <input type="number" id="amount" placeholder="Amount">
-<button id="incomeBtn">➕ Add Income</button>
+    <div class="form-box">
 
-<button id="expenseBtn">➖ Add Expense</button>
-    <h2>History</h2>
-    <ul id="list"></ul>
+        <input type="text" id="name" placeholder="Description">
+
+        <input type="number" id="amount" placeholder="Amount">
+
+        <button id="incomeBtn">➕ Add Income</button>
+
+        <button id="expenseBtn">➖ Add Expense</button>
+
+    </div>
+
+    <div class="history">
+        <h2>History</h2>
+        <ul id="list"></ul>
+    </div>
 
 </div>
 

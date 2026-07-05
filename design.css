@@ -67,23 +67,23 @@ h1{
     color:#7c2d12;
 }
 
+/* INPUT BOXES CENTER */
 input{
-    width:100%;
-    padding:12px;
-    margin-top:10px;
+    width:500px;
+    max-width:90%;
+    display:block;
+    margin:15px auto;
+    padding:14px;
     border:1px solid #ddd;
     border-radius:10px;
     box-sizing:border-box;
-}
-
-.btn-group{
-    display:flex;
-    gap:10px;
-    margin-top:15px;
+    font-size:16px;
 }
 
 button{
-    flex:1;
+    display:block;
+    width:250px;
+    margin:10px auto;
     padding:12px;
     border:none;
     border-radius:10px;
@@ -117,4 +117,15 @@ li{
     margin-top:10px;
     border-left:5px solid #7c3aed;
     border-radius:8px;
+}
+
+@media(max-width:768px){
+    .cards{
+        flex-direction:column;
+    }
+
+    input,
+    button{
+        width:90%;
+    }
 }
